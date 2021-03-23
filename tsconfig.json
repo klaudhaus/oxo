@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "ES2020",
+    "target": "es2020",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "outDir": "./bin",
+    "rootDir": "./src",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["./src/**/*"]
+}
