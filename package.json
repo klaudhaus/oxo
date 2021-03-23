@@ -1,13 +1,13 @@
 {
   "name": "@klaudhaus/oxo",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "type": "module",
   "scripts": {
     "dev": "tsc --watch"
   },
   "author": "",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
   },
   "devDependencies": {
