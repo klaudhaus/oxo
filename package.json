@@ -1,12 +1,12 @@
 {
   "name": "@klaudhaus/oxo",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "type": "module",
   "main": "bin/oxo.js",
   "scripts": {
     "dev": "tsc --watch",
-    "build": "tsc"
+    "install": "tsc"
   },
   "types": "types/oxo.d.ts",
   "author": "tstewart@klaudhaus.com",
