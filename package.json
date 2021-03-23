@@ -1,6 +1,6 @@
 {
   "name": "@klaudhaus/oxo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "type": "module",
   "main": "bin/oxo.js",
@@ -8,6 +8,7 @@
     "dev": "tsc --watch",
     "build": "tsc"
   },
+  "types": "types/oxo.d.ts",
   "author": "tstewart@klaudhaus.com",
   "license": "MIT",
   "dependencies": {
