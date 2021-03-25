@@ -13,28 +13,36 @@ export type Story<T> = {
   model?: T
   view?: (model: T) => any
   init?: T | ((...params: any[]) => T)
-  scenes: StoryScene[]
+  scenes?: StoryScene[]
   fullHeight?: boolean
   url?: string
 }
 
 export type StoryEvent = {
-  captureXpath: string
-  bubbleXpath: string
+  elements: {
+    trigger: string
+    handle: string
+  }
   type: string
+  data?: any
 }
 
 export type StoryUpdate = {
-  fn: {
+  update: {
     path: string
     key: string
   },
-  paramPath: string
+  data: {
+    path: string
+  }
 }
 
 export type StoryScene = {
-  caption: string
-  nextEvent?: StoryEvent
-  nextUpdate?: StoryUpdate
-  snapshot?: string // Flatted representation of model
+  captions?: {
+    command?: string
+    complete?: string
+  }
+  event?: StoryEvent
+  update?: StoryUpdate
+  next?: StoryScene[]
 }
